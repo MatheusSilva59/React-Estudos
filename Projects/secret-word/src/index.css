@@ -1,0 +1,129 @@
+:root {
+  --custom-blue: #15469A;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to bottom, #071F9C, #000001 90%);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+}
+
+.block-newgame {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.block-gameover{
+  text-align: center;
+}
+
+.block-gameover h1{
+  font-size: 42px !important;
+}
+
+.block-gameover h2{
+  font-size: 36px !important;
+  margin-bottom: 1.5%;
+}
+
+.highlighted {
+  color: yellow;
+  margin: 3% 0px 2% 0px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+button {
+  color: white;
+  font-size: 18px;
+  padding: 15px 45px;
+  border-radius: 90px;
+  background-color: var(--custom-blue);
+  border-color: white;
+  border-style: solid;
+}
+
+button:hover {
+  background-color: #0A24A7;
+  cursor: pointer;
+}
+
+.block-game {
+  text-align: center;
+}
+
+.block-game h2 {
+  font-size: 32px;
+}
+
+.block-game h2 span{
+  color: yellow;
+}
+.core-game {
+  padding: 40px;
+  border: 30px solid yellow;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box-game {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  display: flex;
+  font-size: 108px;
+  background-color: rgb(255, 255, 255);
+  /* background-color: red; */
+  padding: 15px;
+  width: 10vh;
+  height: 10vh;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* outline: 10px solid black; */
+  border: 10px solid black;
+  margin: 0px -5px;
+  transform: rotateY(180deg)
+}
+
+/* .letter:hover{
+  background-color: red; */
+  /* animation: spin 1s linear;
+} */
+
+@keyframes spin {
+    from { transform: rotateY(180deg);}
+    to {transform: rotateY(0deg);}
+}
+
+.letter-input-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-input-block input {
+  width: 5vh;
+  height: 5vh;
+  margin-right: 5vh;
+  font-size: 26px;
+}
